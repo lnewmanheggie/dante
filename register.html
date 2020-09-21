@@ -3,53 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Register</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
-    <header>
-      <h1>Sign up to get updates on Dante!</h1>
-    </header>
-
-    <form method="POST">
-      <!-- use POST to avoid showing password in searchbar -->
-      First Name: <input type="text" name="firstname"><br>
-      Last Name: <input type="text" name="lastname"><br>
-      Email: <input type="email" name="email" required><br>
-      Password: <input type="password" name="password" min="5"><br>
-
-      <!-- Birthday: <input type="date" name="birthday"><br>
-
-      Gender: <br>
-      <input type="radio" name="gender" value="male">Male<br>
-      <input type="radio" name="gender" value="female">Female<br>
-      <input type="radio" name="gender" value="other">Other<br>
-
-      Pets: <br>
-      <input type="checkbox" name="dog">Dog(s)<br>
-      <input type="checkbox" name="cat">Cat(s)<br>
-      <input type="checkbox" name="bird">Bird(s)<br>
-      <input type="checkbox" name="reptile">Reptile(s)<br>
-      <input type="checkbox" name="fish">Fish<br>
-      <input type="checkbox" name="other">Other<br>
-
-      <label for="cars">Choose a Car</label>
-      <select name ="cars" id ="cars"
-        <option value=""></option>
-        <option value="toyota" name="toyota">Toyota</option>
-        <option value="honda" name="honda">Honda</option>
-        <option value="volvo" name="volvo">Volvo</option>
-        <option value="audi" name="audi">Audi</option>
-      </select><br> -->
-
-      <input type="submit" value="Register!">
-      <input type="reset">
-    </form>
-    <a href="index.html">
-      <p>Home</p>
-    </a>
-    <a href="gallery.html">
-      <p>Photo Gallery</p>
-    </a>
-    <img src="https://www.pngitem.com/pimgs/m/46-462536_clip-art-balloons-banner-free-happy-birthday-balloons.png">
-    
+    <div class="wrapper">
+      <h1>Sign Up</h1>
+      <ul class="nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Photo Gallery</a></li>
+        <li><a href="video.html">Video Gallery</a></li>
+        <li><a class="active" href="register.html">Sign Up</a></li>
+      </ul>
+      <div class="bdy">
+        <h2>Sign up to get emails when new Dante content is uploaded!</h2><br>
+        <a href="https://mailchi.mp/6ecc2110fb00/dante">
+          <button class="btn">Sign Up</button>
+        </a>
+      </div>
+      <div class="push"></div>
+    </div>
+    <footer class="footer">Created by Lydia Newman-Heggie</footer>
   </body>
+
+
 </html>

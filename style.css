@@ -74,9 +74,9 @@ li a:hover:not(.active){
   display: flex;
 }
 
-.box:hover {
+/* .box:hover {
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
-}
+} */
 
 .box .imgBx {
   width: 150px;
@@ -145,4 +145,20 @@ hr {
   margin: 20px;
   width: 198px;
   height: 350px;
+}
+
+/* Sign up page */
+
+.btn {
+  font-weight: 700;
+  /* makes the edges rounder */
+  border-radius: 300px;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  margin: auto;
+  background-color: #E6C63C;
+}
+
+.btn:hover {
+  background-color: #FEE164;
 }
