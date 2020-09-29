@@ -1,0 +1,151 @@
+* {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* footer at bottom */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+.wrapper {
+  min-height: 100%;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+  margin-bottom: -30px;
+}
+.footer,
+.push {
+  height: 50px;
+}
+
+body{
+  background-color: #E65A3C;
+}
+
+h1{
+  line-height: 70px;
+  font-size: 3em;
+  color: #141414;
+}
+
+.nav{
+  background-color: #E6C63C;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.nav li{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+li a{
+  display: block;
+  color: #141414;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background color on hover */
+li a:hover:not(.active){
+  background-color: #FEE164;
+}
+
+.active {
+  background-color: #FEE164;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  width: 600px;
+  padding:20px;
+  box-sizing: border-box;
+  background: #EEEEEE;
+  border-radius: 4px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.box .imgBx {
+  width: 150px;
+  flex: 0 0 150px;
+}
+
+.box .imgBx img {
+  max-width: 150%;
+}
+
+.box .content {
+  padding-left: 100px;
+}
+
+.box .content h2 {
+  margin: 30px;
+  padding-left: 0;
+  font-size: 22px;
+}
+
+.box .content p {
+  margin: 0
+  padding: 10px 0 0;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+/* Gallery specific styling */
+.bdy {
+  background-color: #EEEEEE;
+  padding-top: 30px;
+  padding-bottom: 80px;
+  margin-top: 40px;
+  /* margin-left: 50px;
+  margin-right: 50px; */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.container img {
+  max-width: 90%;
+  transition: all 1s;
+}
+
+.container img:hover {
+  transform: scale(1.1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+
+/* video gallery */
+
+.container video {
+  max-width: 90%;
+}
+
+/* Sign up page */
+
+.btn {
+  font-weight: 700;
+  /* makes the edges rounder */
+  border-radius: 300px;
+  text-transform: uppercase;
+  padding: 1rem 4rem;
+  margin: auto;
+  background-color: #E6C63C;
+}
+
+.btn:hover {
+  background-color: #FEE164;
+}
